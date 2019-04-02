@@ -1,1 +1,133 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
 
+html{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    text-align: left;
+    font-weight: 400;
+    color: rgb(128, 128, 128); 
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+}
+*:focus {
+    outline: none;
+}
+/* troubleshooting purposes---> 
+*{ border: 1px solid red; } 
+<--------------------------- */
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color:rgb(88, 88, 88);
+    line-height: 0;
+}
+h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(88, 88, 88);
+    line-height: 1;
+}
+p {
+    font-size: 16px;
+    font-weight: 300;
+}
+a {
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+}  
+section {
+    display: inline-block;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 3% 6%;
+    text-align: center;
+}
+.row{
+    width: 100%;
+    padding-bottom: 35px;
+    display: flex;
+}
+.col-48{
+    float: left;
+    width: 48%;
+}
+#left-col{
+    text-align: right;
+    margin-right: 65px; 
+}
+#right-col{
+    text-align: left;
+    vertical-align: middle;
+}
+.labels {
+    display: inline-block;
+    text-align: right;
+    vertical-align: top;
+}
+ul{
+    margin: 0;
+}
+select{
+    background: transparent;
+    width: 200px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.input-field {
+    background: transparent;
+    width: 200px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 1px solid #e2e2e2;
+}
+.input-field::placeholder {
+    visibility: hidden;
+}
+input, select, textarea{
+    color: rgb(128, 128, 128);
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    font-weight: 300;
+}
+.userRating, input[type="checkbox"] {
+  float: left;
+  margin-right: 5px;
+}
+.radio, .checkbox {
+    position: relative;
+    left: -42px;
+    display: block;
+    padding-bottom: 10px;
+}
+#submit {
+    background-color: transparent;
+    border-radius: 2px;
+    color: rgb(88, 88, 88);
+    font-size: 18px;
+    height: 60px;
+    width: 330px;
+    border: 1px solid #e2e2e2;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}  
+footer {
+    position: relative;
+    padding: 2%;
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(29, 29, 29);
+    vertical-align: center;
+}

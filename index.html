@@ -1,1 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form | A Freecodecamp Project</title>
+  <meta name="description" content="Survey Form">
+  <meta name="author" content="Rachel How">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <section>
+    <div>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Hey, let us know what do you think!</p>
+    </div>
+  </section>
+  
+  <section style="margin:0; padding:0;">
+      <form id="survey-form">
+          <div class="row">
+                <div class="col-48" id="left-col">
+                    <label id="name-label" for="name">name</label>
+                </div>
+                <div class="col-48" id="right-col">
+                    <input autofocus type="text" name="name" id="name" class="input-field" placeholder="your name" required>
+                </div>
+            </div>
+          <div class="row">
+                <div class="col-48" id="left-col">
+                    <label id="email-label" for="email">email</label>
+                </div>
+                <div class="col-48" id="right-col">
+                    <input type="email" name="email" id="email" class="input-field" placeholder="your email" required>
+                </div>
+          </div>
+          <div class="row">
+                <div class="col-48" id="left-col">
+                    <label id="number-label" for="age">age</label>
+                </div>
+                <div class="col-48" id="right-col">
+                    <input type="number" name="age" id="number" min="1" max="100" class="input-field" placeholder="your age">
+                </div>
+          </div>
+          <div class="row">
+                <div class="col-48" id="left-col">
+                    <label for="currentRole">your current role</label>
+                </div>
+                <div class="col-48" id="right-col">
+                    <select id="dropdown" name="currentRole" class="dropdown">
+                        <option disabled value>select role</option>
+                        <option value="student">student</option>
+                        <option value="fte">full time employee</option>
+                        <option value="freelancer">freelancer</option>
+                        <option value="unemp">unemployed</option>
+                    </select>
+                </div>
+          </div>
+          <div class="row">
+                <div class="col-48" id="left-col">
+                    <label for="userRating">do you like this logo?</label>
+                </div>
+                <div class="col-48" id="right-col">
+                    <ul style="list-style:none;">
+                        <li class="radio"><label><input name="radio-btn" value="1"  type="radio" class="userRating">yes</label></li>
+                        <li class="radio"><label><input name="radio-btn" value="2"  type="radio" class="userRating">no</label></li>
+                        <li class="radio"><label><input name="radio-btn" value="3"  type="radio" class="userRating">not sure</label></li>
+                    </ul>
+                </div>
+          </div>
+          <div class="row">
+                <div class="col-48" id="left-col">
+                    <label for="improve">things to improve</label>
+                </div>
+                <div class="col-48" id="right-col">
+                    <ul id="improve" style="list-style:none;">
+                        <li class="checkbox"><label><input name="prefer" value="1" type="checkbox" class="userRating">color scheme</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="2" type="checkbox" class="userRating">layout</label></li>
+                        <li class="checkbox"><label><input name="prefer" value="3" type="checkbox" class="userRating">icons</label></li>
+                    </ul>
+                </div>
+          </div>          
+          <div class="row">
+                <div class="col-48" id="left-col">
+                    <label for="comments">further comments</label>
+                </div>
+                <div class="col-48" id="right-col">
+                    <textarea id="comments" class="input-field" style="height:90px; resize:none; border: 1px solid #e2e2e2;" name="comment" placeholder="thank you for your honesty"></textarea>
+                </div>
+          </div>
+        
+          <button id="submit" type="submit">submit</button>
+
+        </form>
+  </section>
+
+  <footer> 
+    <div>
+      Made with ❤️by <a href="https://rachelhow.github.io/">Rachel How</a>
+    </div>
+  </footer>
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+  </body>
+</html>
